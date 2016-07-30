@@ -8,8 +8,7 @@ gem 'autoprefixer-rails', '~>5.2.0'
 gem 'devise', '~>3.5.1'
 gem 'jquery-ui-rails', '5.0.5'
 gem 'will_paginate-bootstrap'
-# Use sqlite3 as the database for Active Record
-#gem 'sqlite3' -- included in environments
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -57,3 +56,10 @@ end
 group :test do
   gem 'capybara', '2.4.4'
 end
+
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
+end
+
+
